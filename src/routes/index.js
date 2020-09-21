@@ -1,15 +1,15 @@
 import express from 'express';
-import upload from './upload.routes';
+import uploadPhotos from './upload.routes';
 
 const router = express.Router();
 
 
 router.get('/', (req, res) => {
   res.json({
-    message: 'HII'
+    message: 'rutaaa'
   });
 });
 
-router.use('/upload', upload)
+router.use('/upload', uploadPhotos)
 
 export default router;
