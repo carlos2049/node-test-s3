@@ -1,5 +1,5 @@
 {
-  "name": "node-pruebas",
+  "name": "node-test-s3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "dev": "nodemon --exec babel-node src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "carlos2049",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
