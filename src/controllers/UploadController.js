@@ -1,4 +1,3 @@
-import AWS from 'aws-sdk';
 import s3, {
   getBucket
 } from '../services/s3';
@@ -13,7 +12,7 @@ export const uploadPhoto = async (req, res) => {
 
 
 const sendData = async (data) => {
-  const dataName = data.originalname;
+  const dataName = `users/${data.originalname}`;
   const paramPutObject = await getBucket(dataName, data)
 
   s3.putObject(paramPutObject, (err, data) => {

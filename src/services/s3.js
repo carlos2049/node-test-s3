@@ -1,9 +1,9 @@
 import AWS from 'aws-sdk';
 
-export const getBucket = (key, data) => {
+export const getBucket = (Key, data) => {
   return {
     Bucket: process.env.BUCKET,
-    Key: key,
+    Key,
     Body: data.buffer
   }
 }
